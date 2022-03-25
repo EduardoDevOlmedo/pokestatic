@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+.divider {
+  background-color: black;
+  margin: 0px 10px 0px 0px;
+}
