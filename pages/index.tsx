@@ -16,7 +16,7 @@ const Home: NextPage<Props> = ({pokemons}) => {
     <>
 
 
-      <Layout title="Pokemon App">
+      <Layout title="Pokemon App!">
   
         <Grid.Container gap={2} justify="flex-start">
           {
