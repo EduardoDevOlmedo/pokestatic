@@ -12,7 +12,7 @@ const PokemonCard: React.FC<Props> = ({pokemon}) => {
   const router = useRouter()
 
   const handleClick = () => {
-    router.push(`/nam e/${pokemon.name}`)
+    router.push(`/name/${pokemon.name}`)
   }
 
     return (

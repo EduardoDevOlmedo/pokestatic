@@ -17,11 +17,7 @@ const Home: NextPage<Props> = ({pokemons}) => {
 
 
       <Layout title="Pokemon App">
-      <Image alt='pokeBanner'
-        src={"/../public/image/banner.png"}
-        width="200"
-        height={"200"}
-      />
+  
         <Grid.Container gap={2} justify="flex-start">
           {
             pokemons.map(pokemon => {
