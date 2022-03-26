@@ -3,7 +3,17 @@ import { createTheme, theme } from "@nextui-org/react"
 export const darkTheme = createTheme({
   type: 'dark',
   theme: {
-    colors: {}, // override dark theme colors
+    colors: {
+ 
+    }
   }
 });
 
+export const lightTheme = createTheme({
+  type: "light",
+  theme: {
+    colors: {
+      
+    }
+  }
+})
