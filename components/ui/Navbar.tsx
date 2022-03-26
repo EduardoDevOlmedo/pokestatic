@@ -22,7 +22,7 @@ export const Navbar = () => {
             alt="Icono de la App" width={70} height={70}
          />  
       </NavHomeLink>
-        
+
 
        <NavHomeLink>
              <Text color="white" h2>P</Text>

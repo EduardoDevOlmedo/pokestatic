@@ -57,14 +57,12 @@ const Index:NextPage<Props> = ({pokemons}) => {
             initialValue={input}
             name={"input"}
             />
-            <Button css={{alignSelf: "end"}}>Search</Button>
             </Grid>
-
         </Grid.Container>
         <Grid.Container  gap={2} alignItems={"center"} justify="center">
             {
               characters.length === 0 ?
-              <Text h3>No pokemons were found</Text>
+              <Text h3>Search a Pokemon</Text>
               :
               characters.map((el: SmallPokemon) => {
                 return (
