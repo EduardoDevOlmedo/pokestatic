@@ -27,7 +27,7 @@ const PokemonPage:NextPage<Props> = ({pokemon}) => {
       if(localFavorites.pokemonExistsInFavs(pokemon.id)){
         setPokemonExists(true)
     }
-      else {
+      else if(!localFavorites.pokemonExistsInFavs(pokemon.id)){
         setPokemonExists(false)
      }
     }
@@ -85,15 +85,16 @@ const PokemonPage:NextPage<Props> = ({pokemon}) => {
             <Modal
             aria-labelledby="modal-title"
             open={pokemonExists}
-            width="200PX"
+            width="200px"
+            scroll
             >
             <Modal.Header>
                {capitalizedName} was added to favorites
             </Modal.Header>
             <Modal.Footer css={{justifyContent:"center"}}>
-                {
-                    visibility && <Button onClick={() => setVisibility(!visibility)}>Ok</Button>
-                }
+                
+            <Button onClick={() => setVisibility(false)}>Ok</Button>
+                
             </Modal.Footer>
         </Modal>
         }

@@ -9,7 +9,6 @@ export const Navbar = () => {
   
   const {theme} = useTheme()
   const darkMode = useDarkMode()
-  const {type, isDark} = useTheme()
 
   return (
     <div  className={styles.navContainer} 
